@@ -119,7 +119,7 @@ PrivateData = @{
         ReleaseNotes = '* Fixed an issue regarding Custom Managed Key.[#22463] [#22898]'
 
         # Prerelease string of this module
-        # Prerelease = ''
+        Prerelease = 'preview'
 
         # Flag to indicate whether the module requires explicit user acceptance for install/update/save
         # RequireLicenseAcceptance = $false
