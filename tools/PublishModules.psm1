@@ -326,7 +326,7 @@ function Remove-ModuleDependencies {
     PROCESS {
         if (-not $KeepRequiredModules.IsPresent){
             $regexRequiredModules = New-Object System.Text.RegularExpressions.Regex "RequiredModules\s*=\s*@\([^\)]+\)"
-            $regexModuleList = New-Object System.Text.RegularExpressions.Regex "#\s*ModuleList\s*=\s*@\([^\)]+\)"
+            $regexModuleList = New-Object System.Text.RegularExpressions.Regex "# ModuleList = @\(\)"
             $content = (Get-Content -Path $Path) -join "`r`n"
             $requiredModulesMatch = $regexRequiredModules.Match($content)
             if ($requiredModulesMatch.Success) {
@@ -335,7 +335,7 @@ function Remove-ModuleDependencies {
                 $requiredModulesContent = "RequiredModules = @()"
             }
             $content = $regexRequiredModules.Replace($content, "RequiredModules = @()")
-            $text = $regexModuleList.Replace($content, $requiredModulesContent -replace "#\s*", "")
+            $text = $regexModuleList.Replace($content,  ($requiredModulesContent -replace "RequiredModules", "ModuleList"))
             Out-FileNoBom -File $Path -Text $text
         }
 
