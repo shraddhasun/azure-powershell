@@ -1,6 +1,6 @@
 {
   "ModuleName": "Az.Workloads",
-  "ModuleVersion": "0.1.2",
+  "ModuleVersion": "0.2.0",
   "Cmdlets": [
     {
       "VerbName": "Get",
@@ -12160,6 +12160,15 @@
           "ValidateNotNullOrEmpty": false
         },
         {
+          "Name": "ManagedResourcesNetworkAccessType",
+          "Type": {
+            "Namespace": "System",
+            "Name": "System.String",
+            "AssemblyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+          },
+          "ValidateNotNullOrEmpty": false
+        },
+        {
           "Name": "Tag",
           "Type": {
             "Namespace": "System.Collections",
@@ -12389,6 +12398,21 @@
             {
               "ParameterMetadata": {
                 "Name": "ManagedResourceGroupName",
+                "Type": {
+                  "Namespace": "System",
+                  "Name": "System.String",
+                  "AssemblyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+                },
+                "ValidateNotNullOrEmpty": false
+              },
+              "Mandatory": false,
+              "Position": -2147483648,
+              "ValueFromPipeline": false,
+              "ValueFromPipelineByPropertyName": false
+            },
+            {
+              "ParameterMetadata": {
+                "Name": "ManagedResourcesNetworkAccessType",
                 "Type": {
                   "Namespace": "System",
                   "Name": "System.String",
@@ -12732,6 +12756,21 @@
             },
             {
               "ParameterMetadata": {
+                "Name": "ManagedResourcesNetworkAccessType",
+                "Type": {
+                  "Namespace": "System",
+                  "Name": "System.String",
+                  "AssemblyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+                },
+                "ValidateNotNullOrEmpty": false
+              },
+              "Mandatory": false,
+              "Position": -2147483648,
+              "ValueFromPipeline": false,
+              "ValueFromPipelineByPropertyName": false
+            },
+            {
+              "ParameterMetadata": {
                 "Name": "Tag",
                 "Type": {
                   "Namespace": "System.Collections",
@@ -13032,6 +13071,21 @@
             {
               "ParameterMetadata": {
                 "Name": "ManagedResourceGroupName",
+                "Type": {
+                  "Namespace": "System",
+                  "Name": "System.String",
+                  "AssemblyQualifiedName": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+                },
+                "ValidateNotNullOrEmpty": false
+              },
+              "Mandatory": false,
+              "Position": -2147483648,
+              "ValueFromPipeline": false,
+              "ValueFromPipelineByPropertyName": false
+            },
+            {
+              "ParameterMetadata": {
+                "Name": "ManagedResourcesNetworkAccessType",
                 "Type": {
                   "Namespace": "System",
                   "Name": "System.String",

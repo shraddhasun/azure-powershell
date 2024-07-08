@@ -1,6 +1,6 @@
 {
   "ModuleName": "Az.Migrate",
-  "ModuleVersion": "2.3.1",
+  "ModuleVersion": "2.4.0",
   "Cmdlets": [
     {
       "VerbName": "Get",
@@ -12262,7 +12262,7 @@
                 },
                 "ValidateNotNullOrEmpty": false
               },
-              "Mandatory": true,
+              "Mandatory": false,
               "Position": -2147483648,
               "ValueFromPipeline": false,
               "ValueFromPipelineByPropertyName": false
